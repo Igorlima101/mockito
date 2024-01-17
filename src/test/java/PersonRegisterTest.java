@@ -4,9 +4,7 @@ import org.example.Person;
 import org.example.PersonRegister;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.Mockito;
+import org.mockito.*;
 import org.mockito.junit.jupiter.MockitoExtension;
 import java.time.LocalDate;
 import static org.junit.jupiter.api.Assertions.*;
@@ -19,6 +17,7 @@ public class PersonRegisterTest {
 
     @InjectMocks
     private PersonRegister personRegister;
+
 
     @Test
     void validatePersonRegister(){
